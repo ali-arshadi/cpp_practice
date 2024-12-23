@@ -31,4 +31,18 @@ vector<int> getPrimeNumbers(vector<int> array)
 }
 int main()
 {
+    vector<int> givenNumbers;
+    cout << "Please enter 10 numbers!\n";
+    for (int i = 1; i <= 10; i++)
+    {
+        int number;
+        cin >> number;
+        givenNumbers.push_back(number);
+    }
+    vector<int> answerArray = getPrimeNumbers(givenNumbers);
+    cout << "answer Array: ";
+    for (int i = 0; i < answerArray.size(); i++)
+    {
+        cout << answerArray[i] << " ";
+    }
 }
