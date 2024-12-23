@@ -17,7 +17,18 @@ bool isPrime(int n)
     }
     return true;
 }
-
+vector<int> getPrimeNumbers(vector<int> array)
+{
+    vector<int> answerArray;
+    for (int i = 0; i < array.size(); i++)
+    {
+        if (isPrime(array[i]))
+        {
+            answerArray.push_back(array[i]);
+        }
+    }
+    return answerArray;
+}
 int main()
 {
 }
