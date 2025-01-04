@@ -1,20 +1,18 @@
 #include <iostream>
-#include "./entities/isPrime.cpp"
-using namespace std;
-
+#include "../namespaces/Ali.cpp"
 int main()
 {
     int numbers[10];
-    cout << "please enter 10 numbers! \n";
+    std::cout << "please enter 10 numbers! \n";
     for (int i = 0; i < 10; i++)
     {
-        cin >> numbers[i];
+        std::cin >> numbers[i];
     }
     for (int i = 0; i < 10; i++)
     {
-        if (isPrime(numbers[i]))
+        if (Ali::Tools::isPrime(numbers[i]))
         {
-            cout << numbers[i] << " ";
+            std::cout << numbers[i] << " ";
         }
     }
 }
